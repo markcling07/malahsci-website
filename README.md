@@ -10,6 +10,7 @@ Built with plain HTML, CSS and JavaScript, so no build step is needed.
 - `styles.css`: design and layout
 - `script.js`: mobile menu, auto-hiding header, program carousel, gallery lightbox and inquiry form
 - `images/`: logo, campus picture and event photos from the official [MalahSCI Facebook page](https://www.facebook.com/MalahSCI)
+- `images/programs/`: course photos from [Unsplash](https://unsplash.com) (free to use under the Unsplash License)
 
 ## View it locally
 

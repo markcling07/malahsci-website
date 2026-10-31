@@ -145,7 +145,7 @@ p { margin: 0 0 1em; }
 .program {
   background: #fff;
   border-radius: var(--radius);
-  padding: 28px;
+  overflow: hidden;
   border-top: 5px solid var(--blue);
   box-shadow: var(--shadow);
   transition: transform .2s;
@@ -165,6 +165,8 @@ p { margin: 0 0 1em; }
   margin-bottom: 12px;
 }
 .program p { color: var(--muted); margin: 0; }
+.program img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; pointer-events: none; }
+.program-body { padding: 22px 28px 28px; }
 
 /* Program carousel: 3 cards per view on desktop, 2 on tablet, 1 on phones */
 .carousel-track {
