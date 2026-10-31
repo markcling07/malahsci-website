@@ -27,16 +27,27 @@ window.addEventListener('scroll', () => {
   lastY = y;
 }, { passive: true });
 
-// Philippine Standard Time clock (UTC+8), whatever the visitor's own time zone is
-const clock = document.getElementById('pst-clock');
-const pstFormat = new Intl.DateTimeFormat('en-PH', {
-  timeZone: 'Asia/Manila',
-  weekday: 'short', month: 'short', day: 'numeric',
-  hour: 'numeric', minute: '2-digit', second: '2-digit'
+// Task finder tabs: Residents / Businesses / Visitors (arrow keys move between tabs)
+const tabs = [...document.querySelectorAll('[role="tab"]')];
+
+function selectTab(tab) {
+  tabs.forEach(t => {
+    const selected = t === tab;
+    t.setAttribute('aria-selected', selected);
+    t.tabIndex = selected ? 0 : -1;
+    document.getElementById(t.getAttribute('aria-controls')).hidden = !selected;
+  });
+}
+
+tabs.forEach((tab, i) => {
+  tab.addEventListener('click', () => selectTab(tab));
+  tab.addEventListener('keydown', e => {
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    const next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+    selectTab(next);
+    next.focus();
+  });
 });
-const tick = () => { clock.textContent = pstFormat.format(new Date()); };
-tick();
-setInterval(tick, 1000);
 
 // Barangays: 2020 census population (PSA)
 const barangays = [
@@ -88,10 +99,9 @@ function renderBarangays() {
     .sort((a, b) => sortBy === 'pop' ? b.pop - a.pop : a.name.localeCompare(b.name));
 
   list.innerHTML = shown.map(b => `
-    <li class="brgy">
-      <div class="brgy-head"><strong>${b.name}</strong><span>${b.pop.toLocaleString('en-PH')}</span></div>
-      <div class="brgy-bar"><i style="width:${(b.pop / largest * 100).toFixed(1)}%"></i></div>
-      <span class="brgy-share">${(b.pop / total * 100).toFixed(1)}% of the town's population</span>
+    <li class="brgy" title="${(b.pop / total * 100).toFixed(1)}% of the town's population">
+      <strong>${b.name}</strong><span>${b.pop.toLocaleString('en-PH')}</span>
+      <div class="brgy-bar" aria-hidden="true"><i style="width:${(b.pop / largest * 100).toFixed(1)}%"></i></div>
     </li>`).join('');
   empty.hidden = shown.length > 0;
 }
@@ -100,7 +110,7 @@ search.addEventListener('input', renderBarangays);
 sortButtons.forEach(button => {
   button.addEventListener('click', () => {
     sortBy = button.dataset.sort;
-    sortButtons.forEach(b => b.classList.toggle('active', b === button));
+    sortButtons.forEach(b => b.setAttribute('aria-pressed', b === button));
     renderBarangays();
   });
 });

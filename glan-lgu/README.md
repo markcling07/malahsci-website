@@ -8,9 +8,14 @@ This is **not** the official LGU website. Get the Municipal Government's approva
 
 ## Files
 
-- `index.html`: page content (about, barangays, officials, services, earthquake recovery, tourism, contact)
-- `styles.css`: design and layout
-- `script.js`: mobile menu, auto-hiding header, Philippine Standard Time clock and barangay search/sort
+- `index.html`: page content (task finder, history timeline, services, earthquake recovery, barangays, officials, places to visit, contact)
+- `styles.css`: design and layout. The scalloped band under the hero and above the footer is drawn after the carved wooden eaves (*calado*) of Glan's heritage houses.
+- `script.js`: mobile menu, auto-hiding header, Residents/Businesses/Visitors tabs and barangay search/sort
+
+## Design references
+
+- [City of Courtenay](https://www.courtenay.ca) (2025 Communicator Awards for its redesign): the task finder that sends residents, businesses and visitors straight to what they need
+- [Visit Faroe Islands](https://visitfaroeislands.com): a full-width photo with a greeting in the local language, and large photos for places to visit
 - `images/emblem.svg`: an original concept emblem (sun over the bay). It is **not** the official town seal. The official seal on Wikipedia is marked non-free, so ask the LGU for a copy and permission to use it.
 - `images/gumasa-beach.jpg`: [The warm and cozy white sand beach in Gumasa…](https://commons.wikimedia.org/wiki/File:The_warm_and_cozy_white_sand_beach_in_Gumasa,_Glan,_Sarangani_Province,_Philippines.jpg) by Bailabiaquia, CC BY-SA 4.0
 - `images/colony-monument.jpg`: [Agricultural Colony No. 9 Monument, Glan, Sarangani.jpg](https://commons.wikimedia.org/wiki/File:Agricultural_Colony_No._9_Monument,_Glan,_Sarangani.jpg) by Joelaldor, CC BY-SA 4.0
