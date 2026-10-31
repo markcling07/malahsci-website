@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Municipality of Glan | Sarangani Province</title>
+  <meta name="description" content="Concept website for the Municipality of Glan, Sarangani Province: Tourtown Glan's history, barangays, officials, public services, Gumasa Beach, heritage houses and contact information.">
+  <link rel="icon" href="images/emblem.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+
+  <!-- ===== Government top bar ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Republic of the Philippines · Province of Sarangani</span>
+      <span class="pst">Philippine Standard Time: <time id="pst-clock">--:--:--</time></span>
+    </div>
+  </div>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <img src="images/emblem.svg" alt="" class="brand-logo" width="50" height="50">
+        <span class="brand-text">
+          <strong>Municipality of Glan</strong>
+          <small>Province of Sarangani · Region XII</small>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="main-nav">
+        <a href="#about">About</a>
+        <a href="#barangays">Barangays</a>
+        <a href="#officials">Officials</a>
+        <a href="#services">Services</a>
+        <a href="#tourism">Visit Glan</a>
+        <a href="#contact" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Tourtown Glan · Settled 1914</p>
+        <h1>Welcome to <span>Glan</span></h1>
+        <p class="lead">The southernmost town of Sarangani, where white-sand beaches meet American-era heritage houses at the mouth of Sarangani Bay.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn">Public Services</a>
+          <a href="#tourism" class="btn btn-ghost">Visit Glan</a>
+        </div>
+      </div>
+      <p class="hero-credit">Gumasa Beach. Photo: Bailabiaquia, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
+    </section>
+
+    <!-- ===== Quick facts ===== -->
+    <section class="stats" aria-label="Quick facts">
+      <div class="container stats-inner">
+        <div class="stat"><strong>117,017</strong><span>Population (2024 census)</span></div>
+        <div class="stat"><strong>610.30</strong><span>Land area in km²</span></div>
+        <div class="stat"><strong>31</strong><span>Barangays</span></div>
+        <div class="stat"><strong>1st</strong><span>Income class</span></div>
+      </div>
+    </section>
+
+    <!-- ===== Recovery notice ===== -->
+    <div class="container">
+      <aside class="notice" aria-label="Earthquake recovery">
+        <strong>Rebuilding together</strong>
+        <p>Glan was among the hardest-hit towns in the magnitude 7.8 earthquake of <strong>June 8, 2026</strong>. Some roads, homes and public buildings are still under repair. Check with the MDRRMO or the Office of the Mayor for the latest advisories before traveling.</p>
+        <a href="#recovery">Read more</a>
+      </aside>
+    </div>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About the Town</p>
+          <h2>From farm colony to Tourtown</h2>
+          <p>The first settlers arrived by ship from Cebu on <strong>October 8, 1914</strong>, to open what the government called <em>Agricultural Colony No. 9</em>. Pioneers such as Tranquilino Ruiz Sr., the colony supervisor, laid out farms and a town center that still has many of its prewar wooden houses.</p>
+          <p>Glan became a municipality on <strong>July 27, 1949</strong>, through Executive Order No. 250 of President Elpidio Quirino. Its territory later gave rise to the Municipality of Malapatan in 1969.</p>
+          <p>Local tradition says a surveyor once asked a Maguindanaon man the name of the place. He was sharpening a blade and answered <em>galang</em>, "sharpening." The surveyors wrote down "Galang," which became "Glan" on the colony plan.</p>
+
+          <figure class="photo-card">
+            <img src="images/colony-monument.jpg" alt="Monument with sculpted settlers, soldiers and a carabao on a red stone base" width="1400" height="930" loading="lazy">
+            <figcaption>The Agricultural Colony No. 9 Monument honors Glan's first settlers. Photo: Joelaldor, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure class="locator">
+            <img src="images/locator-map.png" alt="Map of Sarangani Province with Glan highlighted in red" width="300" height="250" loading="lazy">
+            <figcaption>Glan in Sarangani Province. Map: Mike Gonzalez (TheCoffee), <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>, via Wikimedia Commons</figcaption>
+          </figure>
+          <ul class="facts">
+            <li><span>Settled</span><strong>October 8, 1914</strong></li>
+            <li><span>Town since</span><strong>July 27, 1949 (EO No. 250)</strong></li>
+            <li><span>Neighbors</span><strong>Malapatan (north), Davao Occidental (east), Celebes Sea (south), Sarangani Bay (west)</strong></li>
+            <li><span>Languages</span><strong>Cebuano, Tboli, Sangirese, Maguindanao, Tagalog</strong></li>
+            <li><span>Economy</span><strong>Copra and coconut, milkfish and shrimp farming, corn, sugarcane, banana, mango, tourism</strong></li>
+            <li><span>ZIP code</span><strong>9517</strong></li>
+            <li><span>Area code</span><strong>(083)</strong></li>
+            <li><span>Utilities</span><strong>SOCOTECO II, Glan Water District</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Barangays ===== -->
+    <section id="barangays" class="section tint">
+      <div class="container">
+        <p class="eyebrow">Our Communities</p>
+        <h2>The 31 barangays of Glan</h2>
+        <p class="section-lead">Population figures are from the 2020 Census of Population and Housing (PSA), when the town counted 109,547 residents.</p>
+
+        <div class="brgy-tools">
+          <label class="search">
+            <span class="sr-only">Search barangays</span>
+            <input type="search" id="brgy-search" placeholder="Search a barangay…">
+          </label>
+          <div class="sort" role="group" aria-label="Sort barangays">
+            <button type="button" data-sort="pop" class="active">By population</button>
+            <button type="button" data-sort="name">A–Z</button>
+          </div>
+        </div>
+
+        <ul class="brgy-list" id="brgy-list"></ul>
+        <p class="brgy-empty" id="brgy-empty" hidden>No barangay matches your search.</p>
+      </div>
+    </section>
+
+    <!-- ===== Officials ===== -->
+    <section id="officials" class="section">
+      <div class="container">
+        <p class="eyebrow">Local Government</p>
+        <h2>Municipal officials</h2>
+        <p class="section-lead">Names are taken from public sources for the 2025–2028 term. Please confirm them with the Office of the Mayor before relying on them.</p>
+
+        <div class="exec">
+          <article class="official official-lead">
+            <span class="avatar" aria-hidden="true">VY</span>
+            <div><strong>Hon. Victor James B. Yap Sr.</strong><span>Municipal Mayor</span></div>
+          </article>
+          <article class="official official-lead">
+            <span class="avatar" aria-hidden="true">VY</span>
+            <div><strong>Hon. Victor James P. Yap Jr.</strong><span>Municipal Vice Mayor</span></div>
+          </article>
+        </div>
+
+        <h3 class="sub">Sangguniang Bayan members</h3>
+        <ul class="council">
+          <li class="official"><span class="avatar" aria-hidden="true">EE</span><div><strong>Hon. Elsan Faith R. Engkong</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">RR</span><div><strong>Hon. Ricardo Q. Roque Jr.</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">NW</span><div><strong>Hon. Nazarius D. Wata</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">LH</span><div><strong>Hon. Lydia B. Hizoler</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">EP</span><div><strong>Hon. Edwin D. Pacaldo</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">JE</span><div><strong>Hon. Joselito A. Escobar</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">CH</span><div><strong>Hon. Carlos A. Homo</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">FS</span><div><strong>Hon. Florencia L. Senttilas</strong><span>SB Member</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section id="services" class="section tint">
+      <div class="container">
+        <p class="eyebrow">Frontline Services</p>
+        <h2>How can we help you?</h2>
+        <p class="section-lead">Most services are available at the Municipal Hall in Poblacion, Monday to Friday, 8:00 AM to 5:00 PM. Requirements can change, so ask the office before you go.</p>
+
+        <div class="services">
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6z M14 2v6h6 M9 13h8 M9 17h8"/></svg>
+            <h3>Civil Registry</h3>
+            <p>Registration and copies of birth, marriage and death records.</p>
+            <span class="office">Municipal Civil Registrar</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18 M5 21V9l7-5 7 5v12 M9 21v-6h6v6"/></svg>
+            <h3>Business Permits</h3>
+            <p>New applications and yearly renewal of Mayor's and business permits.</p>
+            <span class="office">BPLO</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l9-6 9 6 M5 10v9h14v-9 M9 19v-5h6v5"/></svg>
+            <h3>Real Property Tax</h3>
+            <p>Tax declarations, assessments and payment of real property tax.</p>
+            <span class="office">Assessor &amp; Treasurer</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 6-8 11-8 11z M12 9v5 M9.5 11.5h5"/></svg>
+            <h3>Health Services</h3>
+            <p>Consultations, immunization, maternal care and medical certificates.</p>
+            <span class="office">Rural Health Unit</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M2 20c0-3 3-5 6-5s6 2 6 5 M12 15.5c1-.3 2.4-.5 4-.5 3 0 6 2 6 5"/></svg>
+            <h3>Social Welfare</h3>
+            <p>Assistance for families, senior citizens, PWDs, solo parents and children.</p>
+            <span class="office">MSWDO</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 16c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5 M5 12c1-3 4-5 7-5 2 0 4 1 5 3l3-2v6l-3-2 M9 10h.01"/></svg>
+            <h3>Agriculture &amp; Fisheries</h3>
+            <p>Support for coconut farmers, fishpond operators and fisherfolk.</p>
+            <span class="office">Municipal Agriculture Office</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 16H3z M12 10v4 M12 17h.01"/></svg>
+            <h3>Disaster Response</h3>
+            <p>Early warnings, evacuation and emergency response during calamities.</p>
+            <span class="office">MDRRMO</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M12 11v10 M7 21h10 M4 14l3-2 M20 14l-3-2"/></svg>
+            <h3>Tourism Office</h3>
+            <p>Resort accreditation, tour guides, events and visitor information.</p>
+            <span class="office">Municipal Tourism Office</span>
+          </article>
+        </div>
+
+        <figure class="feature" id="recovery">
+          <img src="images/quake-highway.jpg" alt="Residents walk along a cracked and buckled highway beside the coast in Glan" width="1165" height="1400" loading="lazy">
+          <figcaption>
+            <span class="tag">Earthquake recovery</span>
+            <h3>After the June 8, 2026 earthquake</h3>
+            <p>The magnitude 7.8 quake struck offshore Sarangani at 7:37 in the morning. In Glan it cracked roads, damaged homes and briefly cut the town off from General Santos City. Sarangani was placed under a state of calamity, and repair work continues.</p>
+            <p>If your home was damaged, register with your barangay and the MSWDO so your household can be included in assistance lists.</p>
+            <small>Photo: Office of the Vice Mayor, Municipal Government of Glan (public domain), via Wikimedia Commons</small>
+          </figcaption>
+        </figure>
+
+        <div class="reminders">
+          <h3>Yearly reminders</h3>
+          <ul>
+            <li><strong>January 1–20</strong><span>Renew business permits to avoid penalties.</span></li>
+            <li><strong>On or before March 31</strong><span>Pay the first quarter of real property tax, or the full year to qualify for an advance-payment discount.</span></li>
+            <li><strong>May</strong><span>Sarangani Bay Festival (SarBay Fest) at Gumasa. Resorts fill up early.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Tourism & Heritage ===== -->
+    <section id="tourism" class="section">
+      <div class="container">
+        <p class="eyebrow">Tourism &amp; Heritage</p>
+        <h2>Discover Glan</h2>
+        <p class="section-lead">Beaches on one side of the highway, a heritage town center on the other. Glan is a scenic drive along the bay from General Santos City.</p>
+
+        <div class="tour-grid">
+          <article class="tour tour-wide">
+            <img src="images/gumasa-beach.jpg" alt="Shallow turquoise water and white sand at Gumasa Beach under a leafy tree" width="1400" height="1050" loading="lazy">
+            <div class="tour-body">
+              <span class="tag">Barangay Gumasa</span>
+              <h3>Gumasa Beach</h3>
+              <p>A long stretch of fine white sand and clear, shallow water, often called the "Boracay of Mindanao." It is Sarangani's best-known beach, lined with resorts and quiet coves.</p>
+              <small class="credit">Photo: Bailabiaquia, CC BY-SA 4.0</small>
+            </div>
+          </article>
+
+          <article class="tour">
+            <div class="tour-art" aria-hidden="true">
+              <svg viewBox="0 0 200 120"><circle cx="100" cy="30" r="10"/><path d="M40 100 V48 M160 100 V48 M40 52 H160 M40 70 H160 M60 52 V70 M80 52 V70 M100 52 V70 M120 52 V70 M140 52 V70 M10 100 H190"/></svg>
+            </div>
+            <div class="tour-body">
+              <span class="tag">Every May</span>
+              <h3>Sarangani Bay Festival</h3>
+              <p>SarBay Fest is a summer beach party at Gumasa with music, concerts and beach volleyball. It is promoted as the biggest beach festival in Mindanao.</p>
+            </div>
+          </article>
+
+          <article class="tour">
+            <img src="images/alegado-house.jpg" alt="Two-storey wooden ancestral house with carved wood panels and capiz-style windows" width="1400" height="930" loading="lazy">
+            <div class="tour-body">
+              <span class="tag">Poblacion</span>
+              <h3>Heritage Houses</h3>
+              <p>Known as Sarangani's heritage town, Glan keeps scores of prewar wooden houses, such as the Alegado Ancestral House. Walk the town center to see carved panels and sliding windows.</p>
+              <small class="credit">Photo: Joelaldor, CC BY-SA 4.0</small>
+            </div>
+          </article>
+
+          <article class="tour">
+            <img src="images/gabaldon-school.jpg" alt="Long wooden Gabaldon school building painted orange and green, shaded by a large tree" width="1400" height="930" loading="lazy">
+            <div class="tour-body">
+              <span class="tag">American era</span>
+              <h3>Gabaldon School Building</h3>
+              <p>The Gabaldon building of Glan Central Elementary School is one of the American-era public schools built across the country. Today it also serves as an evacuation center.</p>
+              <small class="credit">Photo: Joelaldor, CC BY-SA 4.0</small>
+            </div>
+          </article>
+
+          <article class="tour">
+            <div class="tour-art tour-art-sea" aria-hidden="true">
+              <svg viewBox="0 0 200 120"><path d="M100 14 V60 M100 18 L132 56 H100 M100 26 L74 56 H100 M66 62 H136 L126 72 H76 Z M0 84 Q25 74 50 84 T100 84 T150 84 T200 84 M0 104 Q25 94 50 104 T100 104 T150 104 T200 104"/></svg>
+            </div>
+            <div class="tour-body">
+              <span class="tag">Nature</span>
+              <h3>Coves &amp; Dive Spots</h3>
+              <p>Beyond Gumasa, coastal barangays such as Burias have quieter swimming spots, and local resorts offer snorkeling and scuba diving where Sarangani Bay meets the Celebes Sea.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section tint">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Get in Touch</p>
+          <h2>Visit the Municipal Hall</h2>
+          <figure class="hall">
+            <img src="images/municipal-hall.jpg" alt="The gold-clad Glan Municipal Hall, a five-storey building with dark windows" width="1050" height="1400" loading="lazy">
+            <figcaption>The "Golden" Municipal Hall (2013). Photo: Mata Dil, <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener">CC BY 3.0</a>, via Wikimedia Commons</figcaption>
+          </figure>
+          <ul class="contact-list">
+            <li><strong>Address</strong><span>Municipal Hall, Poblacion, Glan, Sarangani 9517</span></li>
+            <li><strong>Office hours</strong><span>Monday to Friday, 8:00 AM – 5:00 PM (except holidays)</span></li>
+            <li><strong>Province</strong><span><a href="https://www.sarangani.gov.ph" target="_blank" rel="noopener">Provincial Government of Sarangani</a></span></li>
+          </ul>
+          <div class="hotline">
+            <strong>Emergency?</strong>
+            <span>Call the national emergency hotline <a href="tel:911">911</a>.</span>
+          </div>
+        </div>
+        <div class="map">
+          <iframe title="Map of Glan, Sarangani" loading="lazy"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=125.10%2C5.74%2C125.32%2C5.90&amp;layer=mapnik&amp;marker=5.8231%2C125.2042"></iframe>
+          <a href="https://www.openstreetmap.org/?mlat=5.8231&amp;mlon=125.2042#map=13/5.8231/125.2042" target="_blank" rel="noopener">View larger map</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/emblem.svg" alt="" width="48" height="48">
+        <div>
+          <strong>Municipality of Glan</strong>
+          <p>Province of Sarangani, Philippines</p>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Government links">
+        <a href="https://www.gov.ph" target="_blank" rel="noopener">GOV.PH</a>
+        <a href="https://www.officialgazette.gov.ph" target="_blank" rel="noopener">Official Gazette</a>
+        <a href="https://www.sarangani.gov.ph" target="_blank" rel="noopener">Sarangani Province</a>
+        <a href="https://www.phivolcs.dost.gov.ph" target="_blank" rel="noopener">PHIVOLCS</a>
+        <a href="https://psa.gov.ph" target="_blank" rel="noopener">PSA</a>
+      </nav>
+      <p class="disclaimer">This is a concept website made for demonstration. It is not the official website of the Municipality of Glan. The emblem is an original design, not the official town seal. Photos are from Wikimedia Commons under the licenses shown. Facts come from public sources (PSA, Executive Order No. 250, news reports) and may be out of date.</p>
+      <p class="copyright">© <span id="year"></span> Glan, Sarangani</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=1"></script>
+</body>
+</html>
