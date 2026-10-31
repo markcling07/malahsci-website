@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Municipality of Malapatan | Sarangani Province</title>
+  <meta name="description" content="Concept website for the Municipality of Malapatan, Sarangani Province: town profile, barangays, officials, public services, tourism and contact information.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+
+  <!-- ===== Government top bar ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Republic of the Philippines · Province of Sarangani</span>
+      <span class="pst">Philippine Standard Time: <time id="pst-clock">--:--:--</time></span>
+    </div>
+  </div>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <img src="images/emblem.svg" alt="" class="brand-logo" width="52" height="52">
+        <span class="brand-text">
+          <strong>Municipality of Malapatan</strong>
+          <small>Province of Sarangani · Region XII</small>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="main-nav">
+        <a href="#about">About</a>
+        <a href="#barangays">Barangays</a>
+        <a href="#officials">Officials</a>
+        <a href="#services">Services</a>
+        <a href="#tourism">Tourism</a>
+        <a href="#contact" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Sarangani Bay · Since 1969</p>
+        <h1>Welcome to <span>Malapatan</span></h1>
+        <p class="lead">A first-class town on the eastern shore of Sarangani Bay, home to Christian, Maguindanaon and Blaan communities living and working side by side.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn">Public Services</a>
+          <a href="#about" class="btn btn-ghost">Explore the Town</a>
+        </div>
+      </div>
+      <svg class="hero-scene" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+        <path class="hill-back" d="M0 120 C180 40 320 60 460 110 C600 160 720 50 880 70 C1040 90 1160 20 1300 60 C1380 82 1420 90 1440 96 V220 H0 Z"/>
+        <path class="hill-front" d="M0 160 C200 110 360 140 520 150 C700 162 820 120 1000 128 C1180 136 1300 150 1440 140 V220 H0 Z"/>
+        <path class="wave" d="M0 190 C120 176 240 204 360 190 C480 176 600 204 720 190 C840 176 960 204 1080 190 C1200 176 1320 204 1440 190 V220 H0 Z"/>
+      </svg>
+    </section>
+
+    <!-- ===== Quick facts ===== -->
+    <section class="stats" aria-label="Quick facts">
+      <div class="container stats-inner">
+        <div class="stat"><strong>82,577</strong><span>Population (2024 census)</span></div>
+        <div class="stat"><strong>609.28</strong><span>Land area in km²</span></div>
+        <div class="stat"><strong>12</strong><span>Barangays</span></div>
+        <div class="stat"><strong>1st</strong><span>Income class</span></div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About the Town</p>
+          <h2>Where cultures meet by the bay</h2>
+          <p>Malapatan was created on <strong>June 21, 1969</strong> through Republic Act No. 5823, which separated it from the Municipality of Glan. At the time it belonged to South Cotabato. It became part of Sarangani when the new province was created in 1992.</p>
+          <p>The name is often traced to the Blaan language: <em>mala</em> (pepper) and <em>fatan</em> (place), roughly "the place of peppers."</p>
+          <p>The town is known for its weaving traditions. Blaan <em>igem</em> mat weaver Estelita Bantilan of Malapatan was named a National Living Treasure (Gawad sa Manlilikha ng Bayan), and Maguindanaon weavers keep the <em>inaul</em> tradition alive.</p>
+        </div>
+        <ul class="facts">
+          <li><span>Created</span><strong>June 21, 1969 (RA 5823)</strong></li>
+          <li><span>Mother town</span><strong>Glan</strong></li>
+          <li><span>Neighbors</span><strong>Alabel (north), Glan (south), Davao Occidental (east), Sarangani Bay (west)</strong></li>
+          <li><span>Languages</span><strong>Cebuano, Maguindanao, Blaan, Tboli, Tagalog</strong></li>
+          <li><span>Economy</span><strong>Copra and coconut, cattle, corn, sugarcane, banana, mango, fishing</strong></li>
+          <li><span>ZIP code</span><strong>9516</strong></li>
+          <li><span>Area code</span><strong>(083)</strong></li>
+          <li><span>Electricity</span><strong>SOCOTECO II</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Barangays ===== -->
+    <section id="barangays" class="section tint">
+      <div class="container">
+        <p class="eyebrow">Our Communities</p>
+        <h2>The 12 barangays of Malapatan</h2>
+        <p class="section-lead">Population figures are from the 2020 Census of Population and Housing (PSA), when the town counted 80,741 residents.</p>
+
+        <div class="brgy-tools">
+          <label class="search">
+            <span class="sr-only">Search barangays</span>
+            <input type="search" id="brgy-search" placeholder="Search a barangay…">
+          </label>
+          <div class="sort" role="group" aria-label="Sort barangays">
+            <button type="button" data-sort="pop" class="active">By population</button>
+            <button type="button" data-sort="name">A–Z</button>
+          </div>
+        </div>
+
+        <ul class="brgy-list" id="brgy-list"></ul>
+        <p class="brgy-empty" id="brgy-empty" hidden>No barangay matches your search.</p>
+      </div>
+    </section>
+
+    <!-- ===== Officials ===== -->
+    <section id="officials" class="section">
+      <div class="container">
+        <p class="eyebrow">Local Government</p>
+        <h2>Municipal officials</h2>
+        <p class="section-lead">Names are taken from public sources. Please confirm them with the Office of the Mayor before relying on them.</p>
+
+        <div class="exec">
+          <article class="official official-lead">
+            <span class="avatar" aria-hidden="true">SS</span>
+            <div><strong>Hon. Salway D. Sumbo Jr.</strong><span>Municipal Mayor</span></div>
+          </article>
+          <article class="official official-lead">
+            <span class="avatar" aria-hidden="true">JD</span>
+            <div><strong>Hon. Jean D. Delos Santos</strong><span>Municipal Vice Mayor</span></div>
+          </article>
+        </div>
+
+        <h3 class="sub">Sangguniang Bayan members</h3>
+        <ul class="council">
+          <li class="official"><span class="avatar" aria-hidden="true">BO</span><div><strong>Hon. Boyet S. Ogan</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">DA</span><div><strong>Hon. Danilo T. Abdulradzak</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">ES</span><div><strong>Hon. Eleanor S. Suib</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">AS</span><div><strong>Hon. Al-Omer P. Suib</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">DT</span><div><strong>Hon. Diana Jade V. Tatad-Sambaga</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">RS</span><div><strong>Hon. Ruben A. Sumbo Jr.</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">NB</span><div><strong>Hon. Norberto A. Butiong</strong><span>SB Member</span></div></li>
+          <li class="official"><span class="avatar" aria-hidden="true">BP</span><div><strong>Hon. Brandy R. Palarion</strong><span>SB Member</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section id="services" class="section tint">
+      <div class="container">
+        <p class="eyebrow">Frontline Services</p>
+        <h2>How can we help you?</h2>
+        <p class="section-lead">Most services are available at the Municipal Hall in Poblacion, Monday to Friday, 8:00 AM to 5:00 PM. Requirements can change, so ask the office before you go.</p>
+
+        <div class="services">
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6z M14 2v6h6 M9 13h8 M9 17h8"/></svg>
+            <h3>Civil Registry</h3>
+            <p>Registration and copies of birth, marriage and death records.</p>
+            <span class="office">Municipal Civil Registrar</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18 M5 21V9l7-5 7 5v12 M9 21v-6h6v6"/></svg>
+            <h3>Business Permits</h3>
+            <p>New applications and yearly renewal of Mayor's and business permits.</p>
+            <span class="office">BPLO</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l9-6 9 6 M5 10v9h14v-9 M9 19v-5h6v5"/></svg>
+            <h3>Real Property Tax</h3>
+            <p>Tax declarations, assessments and payment of real property tax.</p>
+            <span class="office">Assessor &amp; Treasurer</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 6-8 11-8 11z M12 9v5 M9.5 11.5h5"/></svg>
+            <h3>Health Services</h3>
+            <p>Consultations, immunization, maternal care and medical certificates.</p>
+            <span class="office">Rural Health Unit</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M2 20c0-3 3-5 6-5s6 2 6 5 M12 15.5c1-.3 2.4-.5 4-.5 3 0 6 2 6 5"/></svg>
+            <h3>Social Welfare</h3>
+            <p>Assistance for families, senior citizens, PWDs, solo parents and children.</p>
+            <span class="office">MSWDO</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V11 M12 11c0-4 3-7 7-7 0 4-3 7-7 7z M12 14c0-3-2.5-5.5-6-5.5 0 3 2.5 5.5 6 5.5z M6 21h12"/></svg>
+            <h3>Agriculture</h3>
+            <p>Support for farmers and fisherfolk, seeds, livestock and farm advice.</p>
+            <span class="office">Municipal Agriculture Office</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 16H3z M12 10v4 M12 17h.01"/></svg>
+            <h3>Disaster Response</h3>
+            <p>Early warnings, evacuation and emergency response during calamities.</p>
+            <span class="office">MDRRMO</span>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20h20 M4 20V8h6v12 M14 20V4h6v16 M6 11h2 M6 14h2 M16 7h2 M16 10h2 M16 13h2"/></svg>
+            <h3>Building Permits</h3>
+            <p>Building, fencing, electrical and occupancy permits.</p>
+            <span class="office">Municipal Engineering Office</span>
+          </article>
+        </div>
+
+        <div class="reminders">
+          <h3>Yearly reminders</h3>
+          <ul>
+            <li><strong>January 1–20</strong><span>Renew business permits to avoid penalties.</span></li>
+            <li><strong>On or before March 31</strong><span>Pay the first quarter of real property tax, or the full year to qualify for an advance-payment discount.</span></li>
+            <li><strong>June</strong><span>Foundation anniversary and Pakaradyan Festival.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Tourism & Culture ===== -->
+    <section id="tourism" class="section">
+      <div class="container">
+        <p class="eyebrow">Tourism &amp; Culture</p>
+        <h2>Discover Malapatan</h2>
+
+        <div class="tour-grid">
+          <article class="tour tour-festival">
+            <div class="tour-art" aria-hidden="true">
+              <svg viewBox="0 0 200 120"><path d="M20 80 Q100 110 180 80 L165 95 Q100 118 35 95 Z"/><path d="M100 20 V82 M100 22 L150 70 H100 M100 30 L60 72 H100"/></svg>
+            </div>
+            <div class="tour-body">
+              <span class="tag">Every June</span>
+              <h3>Pakaradyan Festival</h3>
+              <p>"Pakaradyan" is Maguindanaon for celebration or thanksgiving. Held with the town's foundation anniversary, it brings together Christian, Muslim and Blaan traditions, with street dancing and colorful <em>ginakit</em> boats on the bay.</p>
+            </div>
+          </article>
+
+          <article class="tour tour-weave">
+            <div class="tour-art" aria-hidden="true">
+              <svg viewBox="0 0 200 120"><path d="M30 20 L60 60 L30 100 M70 20 L100 60 L70 100 M110 20 L140 60 L110 100 M150 20 L180 60 L150 100"/></svg>
+            </div>
+            <div class="tour-body">
+              <span class="tag">Living heritage</span>
+              <h3>Blaan Mat Weaving</h3>
+              <p>Blaan weavers here make <em>igem</em> mats with patterns said to come to them in dreams. Master weaver Estelita Bantilan's work earned national recognition as a living treasure.</p>
+            </div>
+          </article>
+
+          <article class="tour tour-inaul">
+            <div class="tour-art" aria-hidden="true">
+              <svg viewBox="0 0 200 120"><path d="M20 30 H180 M20 50 H180 M20 70 H180 M20 90 H180 M50 20 V100 M100 20 V100 M150 20 V100"/></svg>
+            </div>
+            <div class="tour-body">
+              <span class="tag">Maguindanaon craft</span>
+              <h3>Inaul Weaving</h3>
+              <p>Bright, hand-woven <em>inaul</em> cloth carries the Maguindanaon heritage of the town's Muslim communities.</p>
+            </div>
+          </article>
+
+          <article class="tour tour-bay">
+            <div class="tour-art" aria-hidden="true">
+              <svg viewBox="0 0 200 120"><circle cx="150" cy="40" r="16"/><path d="M0 75 Q25 65 50 75 T100 75 T150 75 T200 75 M0 95 Q25 85 50 95 T100 95 T150 95 T200 95"/></svg>
+            </div>
+            <div class="tour-body">
+              <span class="tag">Nature</span>
+              <h3>Sarangani Bay Coast</h3>
+              <p>The town's western edge faces Sarangani Bay, with coastal barangays and fishing communities a short drive from General Santos City.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section tint">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Get in Touch</p>
+          <h2>Visit the Municipal Hall</h2>
+          <ul class="contact-list">
+            <li><strong>Address</strong><span>Municipal Hall, Poblacion, Malapatan, Sarangani 9516</span></li>
+            <li><strong>Office hours</strong><span>Monday to Friday, 8:00 AM – 5:00 PM (except holidays)</span></li>
+            <li><strong>Province</strong><span><a href="https://www.sarangani.gov.ph" target="_blank" rel="noopener">Provincial Government of Sarangani</a></span></li>
+          </ul>
+          <div class="hotline">
+            <strong>Emergency?</strong>
+            <span>Call the national emergency hotline <a href="tel:911">911</a>.</span>
+          </div>
+        </div>
+        <div class="map">
+          <iframe title="Map of Malapatan, Sarangani" loading="lazy"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=125.20%2C5.90%2C125.38%2C6.04&amp;layer=mapnik&amp;marker=5.9707%2C125.2882"></iframe>
+          <a href="https://www.openstreetmap.org/?mlat=5.9707&amp;mlon=125.2882#map=13/5.9707/125.2882" target="_blank" rel="noopener">View larger map</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/emblem.svg" alt="" width="48" height="48">
+        <div>
+          <strong>Municipality of Malapatan</strong>
+          <p>Province of Sarangani, Philippines</p>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Government links">
+        <a href="https://www.gov.ph" target="_blank" rel="noopener">GOV.PH</a>
+        <a href="https://www.officialgazette.gov.ph" target="_blank" rel="noopener">Official Gazette</a>
+        <a href="https://www.sarangani.gov.ph" target="_blank" rel="noopener">Sarangani Province</a>
+        <a href="https://psa.gov.ph" target="_blank" rel="noopener">PSA</a>
+      </nav>
+      <p class="disclaimer">This is a concept website made for demonstration. It is not the official website of the Municipality of Malapatan, and the emblem shown is a placeholder, not the town seal. Facts come from public sources (PSA, Republic Act No. 5823, news reports) and may be out of date.</p>
+      <p class="copyright">© <span id="year"></span> Malapatan, Sarangani</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=1"></script>
+</body>
+</html>
